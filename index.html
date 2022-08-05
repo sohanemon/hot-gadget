@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hot Gadget</title>
+    <!-- Daisy ui linked -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.20.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css"
+    />
+    <!-- ------------------------------------------------------------------ -->
+  </head>
+  <body class="bg-white text-black">
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 navbar                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+      <div class="container flex flex-wrap justify-start items-center mx-auto">
+        <a href="https://sohanemon.github.io/" class="flex items-center">
+          <img src="./images/logo.png" class="mr-3 h-20" alt=" Logo" />
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="flex flex-col p-4 mt-4 rounded-lg border md:flex-row md:space-x-8 md:mt-0 md:font-medium md:border-0 md:bg-white"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#laptops"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Laptops</a
+              >
+            </li>
+            <li>
+              <a
+                href="#mobiles"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Mobiles</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- --------------------------- navbar end --------------------------- -->
+
+    <!-- ------------------------- carousel start ------------------------- -->
+
+    <div class="carousel w-full container mx-auto">
+      <div id="slide1" class="carousel-item relative w-full">
+        <div class="columns-2 relative">
+          <div
+            class="flex flex-col -translate-y-1/2 gap-y-6 relative top-1/2 p-32"
+          >
+            <h1 class="text-3xl font-semibold">Amazon Echo</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
+              odio dolorem vero minima rem at expedita, optio culpa facilis qui
+            </p>
+            <span class="font-semibold text-4xl">$500</span>
+
+            <div class="btn bg-yellow-500 text-black w-max hover:bg-yellow-600">
+              Buy Now
+            </div>
+          </div>
+          <img src="./images/banner-products/product-2.png" class="w-full" />
+        </div>
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <div class="columns-2 relative">
+          <div
+            class="flex flex-col -translate-y-1/2 gap-y-6 relative top-1/2 p-32"
+          >
+            <h1 class="text-3xl font-semibold">Amazon Echo</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
+              odio dolorem vero minima rem at expedita, optio culpa facilis qui
+            </p>
+            <span class="font-semibold text-4xl">$500</span>
+
+            <div class="btn bg-yellow-500 text-black w-max hover:bg-yellow-600">
+              Buy Now
+            </div>
+          </div>
+
+          <img src="./images/banner-products/product-1.png" class="w-full" />
+        </div>
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <div class="columns-2 relative">
+          <div
+            class="flex flex-col -translate-y-1/2 gap-y-6 relative top-1/2 p-32"
+          >
+            <h1 class="text-3xl font-semibold">Amazon Echo</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
+              odio dolorem vero minima rem at expedita, optio culpa facilis qui
+            </p>
+            <span class="font-semibold text-4xl">$500</span>
+
+            <div class="btn bg-yellow-500 text-black w-max hover:bg-yellow-600">
+              Buy Now
+            </div>
+          </div>
+          <img src="./images/banner-products/product-3.png" class="w-full" />
+        </div>
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------ -->
+    <!--                        smartphones section                         -->
+    <!-- ------------------------------------------------------------------ -->
+
+    <div class="container mx-auto">
+      <h1 class="text-5xl font-medium">Smartphones</h1>
+      <div class="grid grid-cols-3 gap-16">
+        <div
+          class="flex flex-col bg-white text-black rounded-lg shadow-lg items-center gap-2"
+        >
+          <div><img src="./images/laptops/laptop-1.png" alt="" /></div>
+          <h1 class="text-2xl">Durbol Laptop</h1>
+          <p>Khub valo na</p>
+          <span>$1200</span>
+          <button
+            class="btn w-max bg-yellow-400 text-black hover:bg-yellow-600"
+          >
+            Kinte chai
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------- smartphone section end --------------------- -->
+
+    <!-- ------------------------ flowbite script ------------------------- -->
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+  </body>
+</html>
